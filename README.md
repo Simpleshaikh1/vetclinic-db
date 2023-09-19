@@ -1,23 +1,16 @@
-## Getting Started
-<a name="readme-top"></a>
-
-
 <!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -45,9 +38,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Table_Creation]**
-- **[Table_Update]**
-- **[Table_Querying]**
+- **[DatabaseManagement]**
+- **[DataModeling]**
+- **[DataInsertion]**
+- **[Transactions]**
+- **[ErrorHandling]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,11 +99,6 @@ Example command:
 ```
 --->
 
-### Deployment
-
-You can deploy this project using:
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -126,7 +116,11 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[data_input]**
+- [ ] **[DataValidation]**
+- [ ] **[HealthRecords]**
+- [ ] **[AI-and-Predictive-Analytics]**
+- [ ] **[User-Feedback-and-Surveys]**
+- [ ] **[Authentication-and-Authorization]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
