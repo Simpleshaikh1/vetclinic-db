@@ -1,11 +1,4 @@
 ## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
 <a name="readme-top"></a>
 
 
@@ -37,8 +30,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [vet clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Vet Clinic]** helps take in patients data and populate them for quick search.
 
 ## 🛠 Built With <a name="built-with">postgrSQl</a>
@@ -54,19 +45,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Table_Creation]**
 - **[Table_Update]**
 - **[Table_Querying]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](<comminng soon..>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
