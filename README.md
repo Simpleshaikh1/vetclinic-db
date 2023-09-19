@@ -99,7 +99,6 @@ Example command:
 ```
 --->
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -117,7 +116,11 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[data_input]**
+- [ ] **[DataValidation]**
+- [ ] **[HealthRecords]**
+- [ ] **[AI-and-Predictive-Analytics]**
+- [ ] **[User-Feedback-and-Surveys]**
+- [ ] **[Authentication-and-Authorization]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
