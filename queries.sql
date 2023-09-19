@@ -42,7 +42,6 @@ SELECT * FROM animals;
 
 COMMIT;
 
--- Verify that changes persist after commit
 SELECT * FROM animals;
 
 BEGIN;
