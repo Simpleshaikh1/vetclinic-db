@@ -40,7 +40,6 @@ WHERE species IS NULL;
 -- Verify the changes
 SELECT * FROM animals;
 
--- Commit the transaction
 COMMIT;
 
 -- Verify that changes persist after commit
