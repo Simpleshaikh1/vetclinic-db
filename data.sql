@@ -150,5 +150,59 @@ VALUES (
   '2020-07-22'
 );
 
--- Continue with the remaining visit records...
--- Please note that you should insert data for each visit in the same manner.
+-- Gabumon visited Jack Harkness on Feb 2nd, 2021
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Gabumon'),
+  (SELECT id FROM vets WHERE name = 'Jack Harkness'),
+  '2021-02-02'
+);
+
+-- Agumon visited William Tatcher on May 24th, 2020
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Agumon'),
+  (SELECT id FROM vets WHERE name = 'William Tatcher'),
+  '2020-05-24'
+);
+
+-- Agumon visited Stephanie Mendez on Jul 22th, 2020
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Agumon'),
+  (SELECT id FROM vets WHERE name = 'Stephanie Mendez'),
+  '2020-07-22'
+);
+
+-- Gabumon visited Jack Harkness on Feb 2nd, 2021
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Gabumon'),
+  (SELECT id FROM vets WHERE name = 'Jack Harkness'),
+  '2021-02-02'
+);
+
+-- Pikachu visited Maisy Smith on Jan 5th, 2020
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Pikachu'),
+  (SELECT id FROM vets WHERE name = 'Maisy Smith'),
+  '2020-01-05'
+);
+
+-- Pikachu visited Maisy Smith on Mar 8th, 2020
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Pikachu'),
+  (SELECT id FROM vets WHERE name = 'Maisy Smith'),
+  '2020-03-08'
+);
+
+-- Pikachu visited Maisy Smith on May 14th, 2020
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (
+  (SELECT id FROM animals WHERE name = 'Pikachu'),
+  (SELECT id FROM vets WHERE name = 'Maisy Smith'),
+  '2020-05-14'
+);
+
