@@ -206,3 +206,13 @@ WHERE v.vet_id = (SELECT id FROM vets WHERE name = 'Maisy Smith')
 GROUP BY s.name
 ORDER BY COUNT(v.id) DESC
 LIMIT 1;
+
+CREATE INDEX idx_email ON owners(email);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE email = 4;
+
+CREATE INDEX idx_vet_id ON visits(vet_id);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE vet_id = 4;
+
+
+SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
