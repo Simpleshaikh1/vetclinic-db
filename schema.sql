@@ -13,7 +13,7 @@ ALTER TABLE animals
 ADD COLUMN species VARCHAR(255);
 
 -- Create the "owners" table
-CREATE TABLE owners (
+CREATE TABLE owner (
     id SERIAL PRIMARY KEY,
     full_name VARCHAR(255) NOT NULL,
     age INT
@@ -66,23 +66,19 @@ CREATE TABLE visits (
 
 ALTER TABLE visits ADD COLUMN date_of_visit timestamp;
 
-SELECT COUNT(*) FROM visits WHERE animal_id = 4;
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
 
 
-SELECT COUNT(*) FROM visits where animal_id = 4;
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
 
 
 SELECT * FROM visits where vet_id = 2;
 SELECT * FROM owners where email = 'owner_18327@mail.com';
 
 CREATE INDEX idx_animal_id ON visits(animal_id);
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
-
-CREATE INDEX idx_vet_id ON visits(vet_id);
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE vet_id = 4;
 
 
-CREATE INDEX idx_email ON owners(email);
-EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE email = 4;
+
+
+
+
+
+
