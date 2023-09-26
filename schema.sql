@@ -49,7 +49,6 @@ CREATE TABLE vets (
     date_of_graduation date
 );
 
-
 CREATE TABLE specializations (
     vet_id integer REFERENCES vets(id),
     species_id integer REFERENCES species(id),
@@ -65,3 +64,25 @@ CREATE TABLE visits (
     CONSTRAINT unique_visit_animal_vet UNIQUE (animal_id, vet_id, visit_date)
 );
 
+ALTER TABLE visits ADD COLUMN date_of_visit timestamp;
+
+SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+
+
+SELECT * FROM visits where vet_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+CREATE INDEX idx_animal_id ON visits(animal_id);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+
+CREATE INDEX idx_vet_id ON visits(vet_id);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE vet_id = 4;
+
+
+CREATE INDEX idx_email ON owners(email);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE email = 4;
